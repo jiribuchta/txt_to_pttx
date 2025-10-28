@@ -1,0 +1,7 @@
+*
+!text/.gitkeep
+!main.py
+!requirements.txt
+!setting.txt
+!readme.md
+!.gitignore
