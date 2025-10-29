@@ -7,6 +7,9 @@ on:
   release:
     types: [published] # Build when a new official release is published
 
+permissions: # Přidat sem
+  contents: write
+
 jobs:
   build_windows_exe:
     # CRITICAL: Must use a Windows runner to create a Windows .exe
