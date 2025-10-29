@@ -7,7 +7,7 @@ on:
   release:
     types: [published] # Build when a new official release is published
 
-permissions: # Přidat sem
+permissions:
   contents: write
 
 jobs:
@@ -49,5 +49,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: dist/txt_to_pttx.exe
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Built-in secret
+          token: ${{ secrets.GH_RELEASE_TOKEN }}
