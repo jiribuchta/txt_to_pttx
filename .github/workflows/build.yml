@@ -50,3 +50,4 @@ jobs:
         with:
           files: dist/txt_to_pttx.exe
           token: ${{ secrets.GH_RELEASE_TOKEN }}
+          tag_name: ${{ github.ref }}
